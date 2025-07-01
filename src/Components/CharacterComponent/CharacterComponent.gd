@@ -28,7 +28,7 @@ var jump_coyote_timer : float = 0
 var jump_buffer_timer : float = 0
 
 # An enum allows us to keep track of valid states.
-enum States {IDLE, WALK, JUMP, ATTACK, DEAD}
+enum States {IDLE, WALK, JUMP, ATTACK, HIT, DEAD}
 @export var state : States = States.IDLE
 @export_enum("TeamA", "TeamB") var team
 
@@ -43,6 +43,8 @@ func update_state(new_state: States) -> void:
 		self.sprite_component.update_animation_state("walk")
 	elif new_state == States.ATTACK:
 		self.sprite_component.update_animation_state("attack")
+	elif new_state == States.HIT:
+		self.sprite_component.update_animation_state("hit")
 	elif new_state == States.DEAD:
 		self.sprite_component.update_animation_state("dead")
 
@@ -159,6 +161,8 @@ func on_hit():
 	# check if health is at zero
 	if self.health_component.health <= 0.0:
 		die()
+	if health_component.invincible:
+		self.update_state(States.HIT)
 
 func attack(decision: OutputDecision):
 	if self.attack_component != null and decision.attack == true:

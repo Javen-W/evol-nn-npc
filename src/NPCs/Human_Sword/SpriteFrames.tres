@@ -1,13 +1,17 @@
-[gd_resource type="SpriteFrames" load_steps=15 format=3 uid="uid://c1jvxdugbv6cy"]
+[gd_resource type="SpriteFrames" load_steps=19 format=3 uid="uid://c1jvxdugbv6cy"]
 
 [ext_resource type="Texture2D" uid="uid://dvulhnaycrueg" path="res://NPCs/Human_Sword/Sprite/sword/stand1_0.png" id="1_l8p8y"]
 [ext_resource type="Texture2D" uid="uid://rm8lqcfg4de0" path="res://NPCs/Human_Sword/Sprite/sword/stand1_1.png" id="2_i8j77"]
 [ext_resource type="Texture2D" uid="uid://c1oa420miu8kk" path="res://NPCs/Human_Sword/Sprite/sword/stand1_2.png" id="3_asosd"]
 [ext_resource type="Texture2D" uid="uid://b7kg8l0rdnn2v" path="res://NPCs/Human_Sword/Sprite/sword/stand1_3.png" id="4_3olni"]
+[ext_resource type="Texture2D" uid="uid://ehnyr8vcvy5g" path="res://NPCs/Human_Sword/Sprite/sword/alert_0.png" id="4_uuwfx"]
 [ext_resource type="Texture2D" uid="uid://b0cklsifb5a0p" path="res://NPCs/Human_Sword/Sprite/sword/walk1_0.png" id="5_gslcq"]
+[ext_resource type="Texture2D" uid="uid://dlbskqk00bj3b" path="res://NPCs/Human_Sword/Sprite/sword/alert_1.png" id="5_rbgbi"]
 [ext_resource type="Texture2D" uid="uid://c3hmoxj2pjn4q" path="res://NPCs/Human_Sword/Sprite/sword/jump_0.png" id="5_wr42h"]
+[ext_resource type="Texture2D" uid="uid://bbf70s5bayc1o" path="res://NPCs/Human_Sword/Sprite/sword/alert_2.png" id="6_cvryg"]
 [ext_resource type="Texture2D" uid="uid://clkwco5vfcr21" path="res://NPCs/Human_Sword/Sprite/sword/jump_1.png" id="6_i85w3"]
 [ext_resource type="Texture2D" uid="uid://ccxdp0rbcfeu5" path="res://NPCs/Human_Sword/Sprite/sword/walk1_1.png" id="6_wiq6c"]
+[ext_resource type="Texture2D" uid="uid://dcwy2nl3d8pef" path="res://NPCs/Human_Sword/Sprite/sword/alert_3.png" id="7_jh6mh"]
 [ext_resource type="Texture2D" uid="uid://mel31c365bi4" path="res://NPCs/Human_Sword/Sprite/sword/walk1_2.png" id="7_n3lxh"]
 [ext_resource type="Texture2D" uid="uid://cmhkfgvirv548" path="res://NPCs/Human_Sword/Sprite/sword/stabO1_0.png" id="7_prwoo"]
 [ext_resource type="Texture2D" uid="uid://c0bphqkcl0csh" path="res://NPCs/Human_Sword/Sprite/sword/stabO1_1.png" id="8_oaajx"]
@@ -29,6 +33,23 @@ animations = [{
 }],
 "loop": false,
 "name": &"attack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_uuwfx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_rbgbi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_cvryg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_jh6mh")
+}],
+"loop": true,
+"name": &"hit",
 "speed": 5.0
 }, {
 "frames": [{

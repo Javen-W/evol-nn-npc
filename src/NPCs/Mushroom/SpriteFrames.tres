@@ -1,6 +1,7 @@
-[gd_resource type="SpriteFrames" load_steps=7 format=3 uid="uid://b5lvckvcsikd4"]
+[gd_resource type="SpriteFrames" load_steps=8 format=3 uid="uid://b5lvckvcsikd4"]
 
 [ext_resource type="Texture2D" uid="uid://ciehhbn0e20bu" path="res://NPCs/Mushroom/Sprite/stand_0.png" id="1_st0qr"]
+[ext_resource type="Texture2D" uid="uid://bi135y5tjsktl" path="res://NPCs/Mushroom/Sprite/hit1_0.png" id="1_t5hk7"]
 [ext_resource type="Texture2D" uid="uid://bjbpoj6361fwo" path="res://NPCs/Mushroom/Sprite/stand_1.png" id="2_ublmd"]
 [ext_resource type="Texture2D" uid="uid://cxsqn1sgan6dr" path="res://NPCs/Mushroom/Sprite/jump_0.png" id="3_5tx34"]
 [ext_resource type="Texture2D" uid="uid://bffs3tohayk3v" path="res://NPCs/Mushroom/Sprite/move_0.png" id="4_euxrq"]
@@ -9,6 +10,14 @@
 
 [resource]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_t5hk7")
+}],
+"loop": true,
+"name": &"hit",
+"speed": 4.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("1_st0qr")
