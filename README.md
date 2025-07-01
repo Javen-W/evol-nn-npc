@@ -1,4 +1,4 @@
-# NeuroEvolutionary Game AI for Adversarial Environment
+# NeuroEvolutionary AI for Adversarial Game Environment
 
 This repository contains the term project for CSE848 Evolutionary Computation (Fall 2023), implementing a 2D platformer battle environment in Godot 4 with C# and GDScript. The project uses the NEAT (NeuroEvolution of Augmenting Topologies) algorithm, via a modified SharpNEAT library, to evolve neural networks controlling adversarial NPC behaviors (Mushroom vs. HumanSword teams). The system trains NPCs to optimize combat strategies in a simulated arena, evaluating fitness based on match outcomes, damage, and survival time, with applications to dynamic system modeling in manufacturing.
 
